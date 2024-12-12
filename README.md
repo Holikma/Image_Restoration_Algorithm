@@ -6,7 +6,7 @@ This repository contains a C++ program for restoring an image using a sparse mat
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Comparison of Original and Restored Image](#comparison-of-original-and-restored-image)
+  - [Comparison of Original, Damaged and Restored Image](#comparison-of-original-damaged-and-restored-image)
   - [License](#license)
   - [Author](#author)
 
@@ -70,18 +70,17 @@ int main()
 }
 ```
 
-## Comparison of Original and Restored Image
+## Comparison of Original, Damaged and Restored Image
 
-- Original Image
 <div align="center">
   
- <img src="https://github.com/user-attachments/assets/6f9ae950-bd8b-428b-8685-ee393b443314" width="400px" alt="Damaged image">
+ <img src="https://github.com/user-attachments/assets/b427061c-0ebe-4ad1-804c-b503ff142baa" width="300px" alt="Damaged image">
 
 <div align="left">
 Program operates on the damaged image and restores it to the original image. It takes all pixels set to zero and replaces them with the restored pixel values. The restored image is then saved as a PGM file.
   
 <div align="center">
-<img src="https://github.com/user-attachments/assets/45c47556-d524-4a3e-82a9-c3ee791f99be" width="400px" alt="Damaged image">
+<img src="https://github.com/user-attachments/assets/702efbad-f7c6-4c29-a2ad-99798e0ed831" width="300px" alt="Damaged image">
 
 <div align="left">
 As we can see in restored image, removed pixels are replaced with the values calculated by the BiCGSTAB solver. Solution is not perfect, but it is a good approximation of the original image.
@@ -89,11 +88,13 @@ To greater enhance the quality of the restored image, my another project: Enhanc
   
 <div align="center" width="200px" height="200px">
   
-<img src="https://github.com/user-attachments/assets/d7f93330-cd34-4449-b36e-13a0cfe1ea8a" width="400px" alt="Damaged image">
+<img src="https://github.com/user-attachments/assets/eb54c937-8b56-4a83-8ffc-d5801ad8fe01" width="300px" alt="Damaged image">
 
 <div align="left">
+  
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details
 
 ## Author
  Me
